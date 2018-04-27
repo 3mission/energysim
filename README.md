@@ -4,7 +4,7 @@ Simulator for approximating the energy consumption of the internet, and separate
 
 ## Installation
 
-    pip install git+https://github.com/mikkokotila/energysim.git
+    pip install git+https://github.com/3mission/energysim.git
    
 ## Use
 
