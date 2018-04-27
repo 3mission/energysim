@@ -6,8 +6,6 @@ from .uncert import sim_infra, sim_traffic, sim_ads
 from .params import *
 
 
-
-
 class energy():
 
     def __init__(self, rounds, df=False):
