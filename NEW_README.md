@@ -29,7 +29,7 @@ result = energysim.energy(10000)
 #### plot a histogram for the result with 200 bins
 result.hist(bins=200)
 
-# view the dataframe with the results 
+#### view the dataframe with the results 
 result.df
 
 #### get the mean value for ads TWh
