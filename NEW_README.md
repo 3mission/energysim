@@ -3,13 +3,13 @@ A simulator for assessing energy consumption distribution of infrastructure and 
 
 ## 1. Overview 
 
-npv.py provides a very high level simulation facility for getting the NPV (net presevent value) score for any business idea. By default, the simulation automatically generates an incomes statement based on set of input variables and volatility computations. 
+params.py provides input parameters for the simualtor. The main domains for parameters include infra_params, traffic_params, and ads_params. energysim.py contains the actual simulator and histogram settings. The simulation picks randomly input parametes for the simulation from the range of uncertainty. The number of possible permutations is billions. The histogram contains 200 bins in the default setup. All input paraters can be changed. 
 
-### 1.1. About NPV
+### 1.1. About energysim
 
-NPV, or Net Present Value, is the difference between the present value of cash inflows and the present value of cash outflows over a period of time. Its main use-case is in capital budgeting to analyze profitability of a projected investment or project[1].
-
-NPV is widely used by managers and investors to support decision making on large investments. For long it has been the gold standard tool for merger and acquisition activity, but is referred to as the 'discounted cash flow model' in that context. In fact, NPV is the model that Warren Buffet uses to evaluate companies[2]. 
+There are no well-established ways to assess the total power consumption of the Internet. Estimating the internet's energy footprint is challenging because the interconnectedness associated with even seemingly simple aspects of power consumption creates a problem. 
+This simulator takes infrastructure energy consumption, shares of traffic from different access networks and CDNs, shares of protocols, shares of traffic classes, and finally shares of investigated service as input parameters. Then simulator computes tha energy consumption distribution for the service in question. 
+[1].
 
 
 ## 2. Install and Use
@@ -18,38 +18,49 @@ NPV is widely used by managers and investors to support decision making on large
 
 to install: 
 
-    pip install git+https://github.com/mikkokotila/npvpy.git
-    
-you might have to separately install seaborn:
+    pip install git+https://github.com/3mission/energysim.git
+    
+### 2.2. Use
+from energysim import energysim
 
-    pip install seaborn
+#### run the simulation with 10000 rounds
+result = energysim.energy(10000)
 
-### 2.2. Single Use
+#### plot a histogram for the result with 200 bins
+result.hist(bins=200)
 
-#### To import
+# view the dataframe with the results 
+result.df
 
-    from npvpy.main import NPV
+#### get the mean value for ads TWh
+result.ads_mean
 
-#### Use with params in a dictionary
+#### get the mean value for infrastructure total TWh
+result.total_mean
 
-    npv = NPV(parameters)
-    npv._calculate_npv()
-    
-#### Use with params in a text file 
+#### get the standard deviation for ads TWh
+result.ads_std
 
-    npv = NPV('params.txt')
-    npv._calculate_npv()
-    
-### 2.3. Simulation Use
+#### get the standard deviation for infrastructure total TWh
+result.total_std
 
-#### To import
-    
-    from npvpy.simulate import simulate
-    %matplotlib inline
+#### get the median value for ads TWh
+result.ads_median
 
-#### Run a simulation of 10,000 rounds with parameters from text file
+#### get the median value for infrastructure total TWh
+result.total_median
 
-    scores = simulate(10000,'params.txt')
+#### get the minimum value for ads TWh
+result.ads_min
+
+#### get the minimum value for infrastructure total TWh
+result.total_min
+
+#### get the maximum value for ads TWh
+result.ads_max
+
+#### get the maximum value for infrastructure total TWh
+result.total_max
 
 ## 3. Parameters
 
