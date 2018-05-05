@@ -18,8 +18,15 @@ class energy():
         self.ads_mean = self.df.ad_total_twh.mean()
         self.ads_median = self.df.ad_total_twh.median()
         self.ads_std = self.df.ad_total_twh.std()
+        self.ads_mode = self.df.ad_total_twh.mode()
+        self.ads_min = self.df.ad_total_twh.min()
+        self.ads_max = self.df.ad_total_twh.max()
         self.total_mean = self.df.total_twh.mean()
-        self.ads_std = self.df.total_twh.std()
+        self.total_median = self.df.total_twh.median()
+        self.total_std = self.df.total_twh.std()
+        self.total_mode = self.df.total_twh.mode()
+        self.total_min = self.df.total_twh.min()
+        self.total_max = self.df.total_twh.max()
 
         # cleaning up the namespace
         del self.infra_totals
