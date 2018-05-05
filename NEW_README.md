@@ -1,5 +1,5 @@
-# npvpy
-Net Present Value Simulator for Python
+# energysim
+A simulator for assessing energy consumption distribution of infrastructure and Internet service. The simulator is suitable for any service, a case example is Online Advertising. Simulation is done for Python
 
 ## 1. Overview 
 
