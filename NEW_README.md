@@ -88,6 +88,7 @@ laptop_dev_millions | 548 | 0.1 | The number of laptop devices [1]
 laptop_avg_energy | 41.8 | 0.3 | Average laptop energy consumption in kWh [10]
 tablet_dev_millions | 742 | 0.1 | The number of tablet devices [11]
 tablet_avg_energy | 12.9 | 0.3 |  Average tablet energy consumption in kWh [12]
+traffic_params
 fixed_ip | 0.6863 | 0.1 | The share of fixed network IP traffic of total traffic [13]
 mobile_ip | 0.075 | 0.1 | The share of mobile network IP traffic of total traffic [13]
 cdn_ip | 0.3992 | 0.1 | The share of CDN IP traffic of total traffic [13]
@@ -102,15 +103,15 @@ mobile_video | 0.6148 |0.1 | Share of video traffic class in mobile networks [13
 mobile_file | 0.0049 | 0.1 | Share of file sharing traffic class in mobile networks [13]
 mobile_web | 0.3801 | 0.1 | Share of web, email, and data traffic class in mobile networks [13]
 mobile_gaming | 0.0002 | 0.1 | Share of gaming traffic class in mobile networks [13]
-tax_rate | 0.21 | 100 | the tax rate the business is subject to [1]
-number_of_years | 10 | 100 | number of years to model [1]
-depreciation_years | 10 | 100 | how many years to depreciate investment [1]
-capital_investment | 100000 | 100 | initial investment into the business [1]
-rate_of_return | 0.1 | 100 | the rate of return (ROR) [1]
-risk_factor | 2 | 100 | a factor effects the likeliness of change to be negative [1]
-core_static | False | 100 | cores are same every year if True [1]
-revenue_static | False | 100 | revenue is same every year if True [1]
-resource_static | False | 100 | resource is same every year if True [1]
+ads_params
+fixed_video | 0.1 | 0.8 | Share of ads in video traffic class in fixed networks
+fixed_of_file | 0.1 | 0.9 | Share of ads in file sharing traffic class in fixed networks
+fixed_web | 0.5 | 0.5 | Share of ads in web, email, and data traffic class in fixed networks
+fixed_gaming | 0.1 | 0.9 | Share of ads in gaming traffic class in fixed networks
+mobile_video | 0.14 | 0.8 | Share of ads in video traffic class in mobile networks
+mobile_file | 0.1 | 0.9 | Share of ads in file sharing traffic class in mobile networks
+mobile_web | 0.5 | 0.5 | Share of ads in web, email, and data traffic class in mobile networks
+mobile_gaming | 0.1 | 0.9 | Share of ads in gaming traffic class in mobile networks
 
 ## References
 
@@ -130,14 +131,3 @@ Background, energy use and metrics. Building and Environment, 82, 151-159.
 [13] https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/complete-white-paper-c11-481360.html
 [14] Czyz, J., Allman, M., Zhang, J., Iekel-Johnson, S., Osterweil, E., & Bailey, M. (2014, August). Measuring ipv6 adoption. In ACM SIGCOMM Computer Communication Review (Vol. 44, No. 4, pp. 87-98). ACM.
 [15] Pujol, E., Richter, P., Chandrasekaran, B., Smaragdakis, G., Feldmann, A., Maggs, B. M., & Ng, K. C., 2014. Back-office web traffic on the internet. In Proceedings of the 2014 Conference on Internet Measurement Conference. pp. 257-270. ACM.
-[16]
-[17]
-[18]
-[19]
-[20]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
