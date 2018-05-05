@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 #
-# Copyright (C) 2014-2017 Mikko Kotila
+# Copyright (C) 2018 3mission
 
 DESCRIPTION = "Internet energy consumption simulation"
 LONG_DESCRIPTION = """\
@@ -9,11 +9,11 @@ online advertising.
 """
 
 DISTNAME = 'energysim'
-MAINTAINER = 'Mikko Kotila'
-MAINTAINER_EMAIL = 'mailme@mikkokotila.com'
+MAINTAINER = 'The Energy Guys'
+MAINTAINER_EMAIL = 'no_reply@mail.com'
 URL = ''
 LICENSE = 'MIT'
-DOWNLOAD_URL = 'https://github.com/mikkokotila/energysim/'
+DOWNLOAD_URL = 'https://github.com/3mission/energysim/'
 VERSION = '0.1'
 
 try:
