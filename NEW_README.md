@@ -72,35 +72,36 @@ result.total_max
 
 Parameter | Example Value | Uncertainty | Description
 -------|---------|---------|---------
+infra_params
 ran | 140 | 0.2 | Mobile Radio Access Network energy consumption in TWh [1]
-revenue | 30000 | 100 | revenue per delivery [2]
-resource | 8500 | 100 | cost of resource per delivery [1]
-core_change | 0.5 | 100 | maximum annual change of deliverable [1]
-core_incertainty | 1 | 100 | level of incertainty [1]
-core_steps | 30 | 100 | number choices between minimum and maximum [1]
-revenue_change | 0.2 | 100 | max annual change of revenue [1]
-revenue_incertainty | 1 | 100 | level of incertainty [1]
-revenue_steps | 100 | 100 | number choices between minimum and maximum [1]
-resource_change | 0.2 | 100 | max annual change of resouce cost [1]
-resource_incertainty | 0.2 | 100 | level of incertainty [1]
-resource_steps | 10 | 100 | number choices between minimum and maximum [1]
-sales_salary | 96000 | 100 | annual salary per sales person [1]
-production_salary | 75000 | 100 | annual salary per production person [1]
-manager_salary | 132000 | 100 |  annual salary per manager [1]
-service_salary | 96000 | 100 | annual salary per service person [1]
-admin_salary | 60000 | 100 | annual salary per admin person [1]
-core_per_sales | 10 | 100 | number deliverables a sales person can handle [1]
-core_per_production | 5 | 100 | number of deliverables a production person can handle [1]
-core_per_manager | 50 | 100 | number of deliverables a manager can handle [1]
-core_per_service | 20 | 100 | number of deliverables a service person can handle [1]
-core_per_admin | 200 | 100 | number of deliverables an admin person can handle [1]
-salaries_change | 0.05 | 100 | max annual change in sales [1]
-salaries_incertainty | 0.1 | 100 | level of incertainty [1]
-salaries_steps | 10 | 100 | number choices between minimum and maximum [1]
-employer_liabilities | 0.45 |100 | extra costs in addition to salaries [1]
-employer_misc | 0.03 | 100 | other employer costs [1]
-marketing_cost | 0.1 | 100 | marketing cost as a factor of revenue [1]
-other_cost | 0.1 | 100 | other business costs [1]
+ps_core | 146.65 | 0.25 | Packet switched core network energy consumption in TWh [2]
+fixed_line_cpe | 162.06 | 0.2 | Fixed Access CPE devices energy consumption in TWh [1]
+operator_dc | 29.33 | 0.25 | Operator data center energy consumption in TWh [2]
+office_networks | 49.67 | 0.25 | Office network energy consumption in TWh [3]
+internet_core | 29.64 | 0.4 | The Internet core network energy consumption in TWh [4]
+applications | 385.04 | 0.25 | Service data center energy consumption in TWh [5], [6]
+smartphone_dev_millions | 2562 | 0.1 | The number of smartphone devices [7]
+smartphone_avg_energy | 3.34 | 0.3 | Average smartphone energy consumption in kWh [8]
+pc_dev_millions | 325 | 0.1 | The number of PC devices [9]
+pc_avg_energy | 233 | 0.3 | Average PC energy consumption in kWh [10]
+laptop_dev_millions | 548 | 0.1 | The number of laptop devices [1]
+laptop_avg_energy | 41.8 | 0.3 | Average laptop energy consumption in kWh [10]
+tablet_dev_millions | 742 | 0.1 | The number of tablet devices [11]
+tablet_avg_energy | 12.9 | 0.3 |  Average tablet energy consumption in kWh [12]
+fixed_ip | 0.6863 | 0.1 | The share of fixed network IP traffic of total traffic [13]
+mobile_ip | 0.075 | 0.1 | The share of mobile network IP traffic of total traffic [13]
+cdn_ip | 0.3992 | 0.1 | The share of CDN IP traffic of total traffic [13]
+ipv4 | 0.985 | 0.005 | Share of IP version 4 traffic [14], [15]
+tcp | 0.8977 | 0.05 | Share of TCP traffic [15]
+http | 0.7420 | 0.1 | Share of HTTP [14]
+fixed_video | 0.7284 | 0.1 | Share of video traffic class in fixed networks [13]
+fixed_file | 0.1253 | 0.1 | Share of file sharing traffic class in fixed networks [13]
+fixed_web | 0.1290 | 0.1 | Share of web, email, and data traffic class in fixed networks [13]
+fixed_gaming | 0.0174 | 0.1 | Share of gaming traffic class in fixed networks [13]
+mobile_video | 0.6148 |0.1 | Share of video traffic class in mobile networks [13]
+mobile_file | 0.0049 | 0.1 | Share of file sharing traffic class in mobile networks [13]
+mobile_web | 0.3801 | 0.1 | Share of web, email, and data traffic class in mobile networks [13]
+mobile_gaming | 0.0002 | 0.1 | Share of gaming traffic class in mobile networks [13]
 tax_rate | 0.21 | 100 | the tax rate the business is subject to [1]
 number_of_years | 10 | 100 | number of years to model [1]
 depreciation_years | 10 | 100 | how many years to depreciate investment [1]
@@ -114,25 +115,26 @@ resource_static | False | 100 | resource is same every year if True [1]
 ## References
 
 [1] Andrae, A. S., & Edler, T., 2015. On global electricity usage of communication technology: trends to 2030. Challenges, 6(1), 117-157.
-[2] https://hbr.org/2014/11/a-refresher-on-net-present-value
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
-[2]
+[2] Han, C., Harrold, T., Armour, S., Krikidis, I., Videv, S., Grant, P. M., ... & Le, T. A., 2011. Green radio: radio techniques to enable energy-efficient wireless networks. IEEE communications magazine, 49(6).
+[3] Lambert, S., Van Heddeghem, W., Vereecken, W., Lannoo, B., Colle, D., & Pickavet, M., 2012. Worldwide electricity consumption of communication networks. Optics express, 20(26), B513-B524.
+[4] Taylor, C., & Koomey, J., 2008. Estimating energy use and greenhouse gas emissions of internet advertising. Network.
+[5] Koomey, J., 2011 b. Growth in data center electricity use 2005 to 2010. A report by Analytical Press, completed at the request of The New York Times, 9.
+[6] Whitehead, B., Andrews, D., Shah, A., & Maidment, G., 2014. Assessing the environmental impact of data centres part 1:
+Background, energy use and metrics. Building and Environment, 82, 151-159.
+[7] https://www.statista.com/statistics/371889/smartphone-worldwide-installed-base/
+[8] https://www.canstarblue.com.au/energy/electricity/surprising-cost-charging-phone/
+[9] https://www.statista.com/statistics/541339/worldwide-pc-market-installed-base-by-type/
+[10] Van Heddeghem, W., Lambert, S., Lannoo, B., Colle, D., Pickavet, M., & Demeester, P., 2014. Trends in worldwide ICT electricity consumption from 2007 to 2012. Computer Communications, 50, 64-76.
+[11] https://www.nakono.com/tekcarta/market-forecasts/tablets-installed-base/tablet-installed-base-by-os-worldwide/
+[12] http://www.zdnet.com/article/how-much-does-it-cost-to-charge-an-iphone-for-a-year/
+[13] https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/complete-white-paper-c11-481360.html
+[14] Czyz, J., Allman, M., Zhang, J., Iekel-Johnson, S., Osterweil, E., & Bailey, M. (2014, August). Measuring ipv6 adoption. In ACM SIGCOMM Computer Communication Review (Vol. 44, No. 4, pp. 87-98). ACM.
+[15] Pujol, E., Richter, P., Chandrasekaran, B., Smaragdakis, G., Feldmann, A., Maggs, B. M., & Ng, K. C., 2014. Back-office web traffic on the internet. In Proceedings of the 2014 Conference on Internet Measurement Conference. pp. 257-270. ACM.
+[16]
+[17]
+[18]
+[19]
+[20]
 [2]
 [2]
 [2]
