@@ -45,8 +45,9 @@ class energy():
                  sub_title='Energy in TWh',
                  y_label='kernel density')
 
-        ast.hist(self.df, 'total_twh', bins=bins, x_limit=None, 
-                 title='Total Infrastructure',                 
+        ast.hist(self.df, 'total_twh', bins=bins,
+                 x_limit=None,
+                 title='Total Infrastructure',
                  sub_title='Energy in TWh',
                  y_label='kernel density')
 
