@@ -20,12 +20,12 @@ to install:
     
 to import: 
     
-    from energysim import energysim
+    from energysim import energy
 
 to use:
 
     #### run the simulation with 10000 rounds
-    result = energysim.energy(10000)
+    result = energy(10000)
 
     #### plot a histogram for the result with 200 bins
     result.hist(bins=200)
@@ -52,10 +52,10 @@ to use:
     result.total_median
 
     #### get the mode value for ads TWh
-    self.ads_mode
+    result.ads_mode
 
     #### get the mode value for infrastructure total TWh
-    self.total_mode
+    result.total_mode
 
     #### get the minimum value for ads TWh
     result.ads_min
