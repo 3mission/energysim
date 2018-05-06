@@ -37,7 +37,7 @@ def check_dependencies():
     try:
         import astetik
     except ImportError:
-        install_requires.append('astetik')
+        install_requires.append('astetik==1.9.4.2')
 
     return install_requires
 
