@@ -22,6 +22,8 @@ to import:
     
     from energysim import energysim
 
+to use:
+
     #### run the simulation with 10000 rounds
     result = energysim.energy(10000)
 
