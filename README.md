@@ -22,13 +22,15 @@ to import:
     
     from energysim import energy
 
-to use:
+to run the simulation and draw the plot:
 
     #### run the simulation with 10000 rounds
     result = energy(10000)
 
     #### plot a histogram for the result with 200 bins
     result.hist(bins=200)
+
+to access the data and descriptive stats:
 
     #### view the dataframe with the results 
     result.df
