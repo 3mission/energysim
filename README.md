@@ -77,7 +77,7 @@ to access the data and descriptive stats:
 
 Parameter | Example Value | Uncertainty | Description
 -------|---------|---------|---------
-infra_params
+**infra_params**
 ran | 140 | 0.2 | Mobile Radio Access Network energy consumption in TWh [1]
 ps_core | 146.65 | 0.25 | Packet switched core network energy consumption in TWh [2]
 fixed_line_cpe | 162.06 | 0.2 | Fixed Access CPE devices energy consumption in TWh [1]
@@ -93,7 +93,7 @@ laptop_dev_millions | 548 | 0.1 | The number of laptop devices [1]
 laptop_avg_energy | 41.8 | 0.3 | Average laptop energy consumption in kWh [10]
 tablet_dev_millions | 742 | 0.1 | The number of tablet devices [11]
 tablet_avg_energy | 12.9 | 0.3 |  Average tablet energy consumption in kWh [12]
-traffic_params
+**traffic_params**
 fixed_ip | 0.6863 | 0.1 | The share of fixed network IP traffic of total traffic [13]
 mobile_ip | 0.075 | 0.1 | The share of mobile network IP traffic of total traffic [13]
 cdn_ip | 0.3992 | 0.1 | The share of CDN IP traffic of total traffic [13]
@@ -108,7 +108,7 @@ mobile_video | 0.6148 |0.1 | Share of video traffic class in mobile networks [13
 mobile_file | 0.0049 | 0.1 | Share of file sharing traffic class in mobile networks [13]
 mobile_web | 0.3801 | 0.1 | Share of web, email, and data traffic class in mobile networks [13]
 mobile_gaming | 0.0002 | 0.1 | Share of gaming traffic class in mobile networks [13]
-ads_params
+**ads_params**
 fixed_video | 0.1 | 0.8 | Share of ads in video traffic class in fixed networks
 fixed_of_file | 0.1 | 0.9 | Share of ads in file sharing traffic class in fixed networks
 fixed_web | 0.5 | 0.5 | Share of ads in web, email, and data traffic class in fixed networks
