@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import astetik as ast
+from astetik.plots.hist import hist
 
 from .uncert import sim_infra, sim_traffic, sim_ads
 from .params import *
@@ -40,12 +40,12 @@ class energy():
 
         '''HISTOGRAM PLOT VISUALIZATION'''
 
-        ast.hist(self.df, 'ad_total_twh', bins=bins, x_limit=None,
+        hist(self.df, 'ad_total_twh', bins=bins, x_limit=None,
                  title='Online Advertising',
                  sub_title='Energy in TWh',
                  y_label='kernel density')
 
-        ast.hist(self.df, 'total_twh', bins=bins,
+        hist(self.df, 'total_twh', bins=bins,
                  x_limit=None,
                  title='Total Infrastructure',
                  sub_title='Energy in TWh',
