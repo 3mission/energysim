@@ -8,7 +8,7 @@ params.py provides input parameters for the simualtor. The main domains for para
 ### 1.1. About energysim
 
 There are no well-established ways to assess the total power consumption of the Internet. Estimating the internet's energy footprint is challenging because the interconnectedness associated with even seemingly simple aspects of power consumption creates a problem. 
-This simulator takes infrastructure energy consumption, shares of traffic from different access networks and CDNs, shares of protocols, shares of traffic classes, and finally shares of investigated service as input parameters. Then simulator computes tha energy consumption distribution for the service in question. 
+This simulator takes infrastructure energy consumption, shares of traffic from different access networks and CDNs, shares of protocols, shares of traffic classes, and finally shares of investigated service as input parameters. Then simulator computes tha energy consumption distribution for the service in question. The main phases in the simulator are: 1) infrastructure energy consumption estimation, 2) estimating traffic shares of access networks and CDNs, 3) estimating protocol shares, 4) estimating traffic class shares in different access networks, 5) estimating shares of online advertising in each traffic class in different access tecnologies, and 6) presenting the distribution of results.
 
 ## 2. Install and Use
 
