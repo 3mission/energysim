@@ -16,55 +16,56 @@ This simulator takes infrastructure energy consumption, shares of traffic from d
 
 to install: 
 
-    pip install git+https://github.com/3mission/energysim.git
+    pip install git+https://github.com/3mission/energysim.git
     
-### 2.2. Use
-from energysim import energysim
+to import: 
+    
+    from energysim import energysim
 
-#### run the simulation with 10000 rounds
-result = energysim.energy(10000)
+    #### run the simulation with 10000 rounds
+    result = energysim.energy(10000)
 
-#### plot a histogram for the result with 200 bins
-result.hist(bins=200)
+    #### plot a histogram for the result with 200 bins
+    result.hist(bins=200)
 
-#### view the dataframe with the results 
-result.df
+    #### view the dataframe with the results 
+    result.df
 
-#### get the mean value for ads TWh
-result.ads_mean
+    #### get the mean value for ads TWh
+    result.ads_mean
 
-#### get the mean value for infrastructure total TWh
-result.total_mean
+    #### get the mean value for infrastructure total TWh
+    result.total_mean
 
-#### get the standard deviation for ads TWh
-result.ads_std
+    #### get the standard deviation for ads TWh
+    result.ads_std
 
-#### get the standard deviation for infrastructure total TWh
-result.total_std
+    #### get the standard deviation for infrastructure total TWh
+    result.total_std
 
-#### get the median value for ads TWh
-result.ads_median
+    #### get the median value for ads TWh
+    result.ads_median
 
-#### get the median value for infrastructure total TWh
-result.total_median
+    #### get the median value for infrastructure total TWh
+    result.total_median
 
-#### get the mode value for ads TWh
-self.ads_mode
+    #### get the mode value for ads TWh
+    self.ads_mode
 
-#### get the mode value for infrastructure total TWh
-self.total_mode
+    #### get the mode value for infrastructure total TWh
+    self.total_mode
 
-#### get the minimum value for ads TWh
-result.ads_min
+    #### get the minimum value for ads TWh
+    result.ads_min
 
-#### get the minimum value for infrastructure total TWh
-result.total_min
+    #### get the minimum value for infrastructure total TWh
+    result.total_min
 
-#### get the maximum value for ads TWh
-result.ads_max
+    #### get the maximum value for ads TWh
+    result.ads_max
 
-#### get the maximum value for infrastructure total TWh
-result.total_max
+    #### get the maximum value for infrastructure total TWh
+    result.total_max
 
 ## 3. Parameters
 
