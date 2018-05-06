@@ -42,11 +42,13 @@ class energy():
 
         ast.hist(self.df, 'ad_total_twh', bins=bins, x_limit=None,
                  title='Online Advertising',
-                 sub_title='Energy in TWh')
+                 sub_title='Energy in TWh',
+                 y_label='kernel density')
 
-        ast.hist(self.df, 'total_twh', bins=bins, x_limit=None,
+        ast.hist(self.df, 'total_twh', bins=bins, x_limit=None, 
                  title='Total Infrastructure',                 
-                 sub_title='Energy in TWh')
+                 sub_title='Energy in TWh',
+                 y_label='kernel density')
 
     def _uncertainty(self):
 
