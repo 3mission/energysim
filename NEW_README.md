@@ -119,18 +119,32 @@ mobile_gaming | 0.1 | 0.9 | Share of ads in gaming traffic class in mobile netwo
 ## References
 
 [1] Andrae, A. S., & Edler, T., 2015. On global electricity usage of communication technology: trends to 2030. Challenges, 6(1), 117-157.
+
 [2] Han, C., Harrold, T., Armour, S., Krikidis, I., Videv, S., Grant, P. M., ... & Le, T. A., 2011. Green radio: radio techniques to enable energy-efficient wireless networks. IEEE communications magazine, 49(6).
+
 [3] Lambert, S., Van Heddeghem, W., Vereecken, W., Lannoo, B., Colle, D., & Pickavet, M., 2012. Worldwide electricity consumption of communication networks. Optics express, 20(26), B513-B524.
+
 [4] Taylor, C., & Koomey, J., 2008. Estimating energy use and greenhouse gas emissions of internet advertising. Network.
+
 [5] Koomey, J., 2011 b. Growth in data center electricity use 2005 to 2010. A report by Analytical Press, completed at the request of The New York Times, 9.
+
 [6] Whitehead, B., Andrews, D., Shah, A., & Maidment, G., 2014. Assessing the environmental impact of data centres part 1:
 Background, energy use and metrics. Building and Environment, 82, 151-159.
+
 [7] https://www.statista.com/statistics/371889/smartphone-worldwide-installed-base/
+
 [8] https://www.canstarblue.com.au/energy/electricity/surprising-cost-charging-phone/
+
 [9] https://www.statista.com/statistics/541339/worldwide-pc-market-installed-base-by-type/
+
 [10] Van Heddeghem, W., Lambert, S., Lannoo, B., Colle, D., Pickavet, M., & Demeester, P., 2014. Trends in worldwide ICT electricity consumption from 2007 to 2012. Computer Communications, 50, 64-76.
+
 [11] https://www.nakono.com/tekcarta/market-forecasts/tablets-installed-base/tablet-installed-base-by-os-worldwide/
+
 [12] http://www.zdnet.com/article/how-much-does-it-cost-to-charge-an-iphone-for-a-year/
+
 [13] https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/complete-white-paper-c11-481360.html
+
 [14] Czyz, J., Allman, M., Zhang, J., Iekel-Johnson, S., Osterweil, E., & Bailey, M. (2014, August). Measuring ipv6 adoption. In ACM SIGCOMM Computer Communication Review (Vol. 44, No. 4, pp. 87-98). ACM.
+
 [15] Pujol, E., Richter, P., Chandrasekaran, B., Smaragdakis, G., Feldmann, A., Maggs, B. M., & Ng, K. C., 2014. Back-office web traffic on the internet. In Proceedings of the 2014 Conference on Internet Measurement Conference. pp. 257-270. ACM.
