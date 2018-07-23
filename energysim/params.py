@@ -40,17 +40,26 @@ def traffic_params():
             'tcp': [0.8977, 0.05], # < subset of ipv4
             'http': [0.7420, 0.1], # < subset of tcp
 
-                # http breaks down to 'fixed' and 'mobile'
+    }
 
-                'fixed_video': [0.7284, 0.1],   # subset of fixed
-                'fixed_file': [0.1253, 0.1],    # subset of fixed
-                'fixed_web': [0.1290, 0.1],     # subset of fixed
-                'fixed_gaming': [0.0174, 0.1],  # subset of fixed
+    return p
 
-                'mobile_video': [0.6148, 0.1],  # subset of mobile
-                'mobile_file': [0.0049, 0.1],   # subset of mobile
-                'mobile_web': [0.3801, 0.1],    # subset of mobile
-                'mobile_gaming': [0.0002, 0.1],  # subset of mobile
+
+def traffic_params_triangular():
+
+    p = {
+
+        # http breaks down to 'fixed' and 'mobile'
+
+        'fixed_video': [0.7284, 0.1],   # subset of fixed
+        'fixed_file': [0.1253, 0.1],    # subset of fixed
+        'fixed_web': [0.1290, 0.1],     # subset of fixed
+        'fixed_gaming': [0.0174, 0.1],  # subset of fixed
+
+        'mobile_video': [0.6148, 0.1],  # subset of mobile
+        'mobile_file': [0.0049, 0.1],   # subset of mobile
+        'mobile_web': [0.3801, 0.1],    # subset of mobile
+        'mobile_gaming': [0.0002, 0.1],  # subset of mobile
     }
 
     return p
