@@ -57,7 +57,7 @@ class energy():
 
         self.ads_result = sim_ads()
         self.traffic_result = sim_traffic()
-        self.traffic_index = traffic_params().keys()
+        self.traffic_index = list(traffic_params().keys()) + list(traffic_params_triangular().keys())
         self.infra_result = sim_infra()
         self.infra_totals = self._infra_totals()
         self.infra_total = self.infra_totals.sum()
