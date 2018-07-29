@@ -100,14 +100,14 @@ cdn_ip | 0.3992 | 0.1 | The share of CDN IP traffic of total traffic [13]
 ipv4 | 0.985 | 0.005 | Share of IP version 4 traffic [14], [15]
 tcp | 0.8977 | 0.05 | Share of TCP traffic [15]
 http | 0.7420 | 0.1 | Share of HTTP [14]
-fixed_video | 0.7284 | 0.1 | Share of video traffic class in fixed networks [13]
-fixed_file | 0.1253 | 0.1 | Share of file sharing traffic class in fixed networks [13]
-fixed_web | 0.1290 | 0.1 | Share of web, email, and data traffic class in fixed networks [13]
-fixed_gaming | 0.0174 | 0.1 | Share of gaming traffic class in fixed networks [13]
-mobile_video | 0.6148 |0.1 | Share of video traffic class in mobile networks [13]
-mobile_file | 0.0049 | 0.1 | Share of file sharing traffic class in mobile networks [13]
-mobile_web | 0.3801 | 0.1 | Share of web, email, and data traffic class in mobile networks [13]
-mobile_gaming | 0.0002 | 0.1 | Share of gaming traffic class in mobile networks [13]
+fixed_video | 0.7284 | 0.1 | Share of video traffic class in fixed networks [13]. Triangular distribution used.
+fixed_file | 0.1253 | 0.1 | Share of file sharing traffic class in fixed networks [13]. Triangular distribution used.
+fixed_web | 0.1290 | 0.1 | Share of web, email, and data traffic class in fixed networks [13]. Triangular distribution used.
+fixed_gaming | 0.0174 | 0.1 | Share of gaming traffic class in fixed networks [13]. Triangular distribution used.
+mobile_video | 0.6148 |0.1 | Share of video traffic class in mobile networks [13]. Triangular distribution used.
+mobile_file | 0.0049 | 0.1 | Share of file sharing traffic class in mobile networks [13]. Triangular distribution used.
+mobile_web | 0.3801 | 0.1 | Share of web, email, and data traffic class in mobile networks [13]. Triangular distribution used.
+mobile_gaming | 0.0002 | 0.1 | Share of gaming traffic class in mobile networks [13]. Triangular distribution used.
 **ads_params**
 fixed_video | 0.1 | 0.8 | Share of ads in video traffic class in fixed networks
 fixed_of_file | 0.1 | 0.9 | Share of ads in file sharing traffic class in fixed networks
