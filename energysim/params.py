@@ -80,3 +80,9 @@ def ads_params():
     }
 
     return p
+
+
+def smartphone_usage():
+    # Return smartphone usage share relevant to service under assessment
+    return 1
+
