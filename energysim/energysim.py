@@ -129,7 +129,7 @@ class energy():
     def _infra_totals(self):
 
         # compute total values
-        smartphone_total = self.infra_result[7] * self.infra_result[8] / 1000
+        smartphone_total = 'Smartphone.usage' * self.infra_result[7] * self.infra_result[8] / 1000
         pc_total = self.infra_result[9] * self.infra_result[10] / 1000
         laptop_total = self.infra_result[11] * self.infra_result[12] / 1000
         tablet_total = self.infra_result[13] * self.infra_result[14] / 1000
