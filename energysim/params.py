@@ -24,12 +24,6 @@ def infra_params():
 
     return p
 
-def smartphone_usage_params():
-    p = {
-    smartphone_usage=0.6    
-    }
-
-    return p   
 
 def traffic_params():
 
@@ -86,3 +80,5 @@ def ads_params():
     }
 
     return p
+
+
