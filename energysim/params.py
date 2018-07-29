@@ -86,3 +86,17 @@ def smartphone_usage():
     # Return smartphone usage share relevant to service under assessment
     return 1
 
+
+def pc_usage():
+    # Return PC usage share relevant to service under assessment
+    return 1
+
+def laptop_usage():
+    # Return laptop usage share relevant to service under assessment
+    return 1
+
+def tablet_usage():
+    # Return tablet usage share relevant to service under assessment
+    return 1
+
+
