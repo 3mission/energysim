@@ -1,6 +1,6 @@
 import numpy as np
 
-from .params import infra_params, traffic_params, ads_params
+from .params import infra_params, traffic_params, ads_params, traffic_params_triangular
 
 
 def _deviation(n, uncertainty):
@@ -33,6 +33,16 @@ def _random_pick(p):
     return l
 
 
+def _random_pick_triangular(p):
+
+    l = []
+    for key in p.keys(): 
+        round_value = np.random.triangular(p[key][0], p[key][1], p[key][2])
+        l.append(round_value)
+        
+    return l
+
+
 def _rescaling(data):
 
     data = np.array(data)
@@ -55,11 +65,14 @@ def sim_infra():
 
 
 def sim_traffic():
-
+    
     p = traffic_params()
     p = _variations(p)
     out = _random_pick(p)
-
+   
+    p = traffic_params_triangular()
+    out += _random_pick_triangular(p)
+ 
     # rescaling fixed and mobile to total 100%
     out[-4:] = _rescaling(out[-4:])
     out[-8:-4] = _rescaling(out[-8:-4])
