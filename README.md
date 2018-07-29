@@ -117,8 +117,11 @@ mobile_video | 0.14 | 0.8 | Share of ads in video traffic class in mobile networ
 mobile_file | 0.1 | 0.9 | Share of ads in file sharing traffic class in mobile networks
 mobile_web | 0.5 | 0.5 | Share of ads in web, email, and data traffic class in mobile networks
 mobile_gaming | 0.1 | 0.9 | Share of ads in gaming traffic class in mobile networks
-**smartphone_usage**
+**Usage params**
 smartphone_usage | 1 | 0 | Share of relevant usage of smartphone regarding the service being assessed
+pc_usage | 1 | 0 | Share of relevant usage of smartphone regarding the service being assessed
+laptop_usage | 1 | 0 | Share of relevant usage of smartphone regarding the service being assessed
+tablet_usage | 1 | 0 | Share of relevant usage of smartphone regarding the service being assessed
 
 ## References
 
